@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PopupOption" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gI9-c6-o9I">
+                                <rect key="frame" x="108" y="243.5" width="227" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywR-68-itL">
+                                <rect key="frame" x="40" y="313" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maU-MP-Qx6">
+                                <rect key="frame" x="40" y="216" width="295" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reJ-Fu-CBw">
+                                <rect key="frame" x="40" y="285.5" width="295" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Kunyit App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlW-Wt-48M">
+                                <rect key="frame" x="78" y="92" width="219.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-rE-sEs">
+                                <rect key="frame" x="40" y="383" width="295" height="40"/>
+                                <color key="backgroundColor" name="colorAccent"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QvI-Z2-cPZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="loginTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAV-Gy-892"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orA-yx-Dgs">
+                                <rect key="frame" x="40" y="243.5" width="60" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ScS-in-feV"/>
+                                    <constraint firstAttribute="width" constant="60" id="uVA-gY-TB1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="+62">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="countryCodeTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Kv-5f-1eZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8b-b9-pEm">
+                                <rect key="frame" x="119" y="611" width="137" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Change Language">
+                                    <color key="titleColor" name="colorAccent"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeLangTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWT-29-f3Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="appBackground"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0qd-rE-sEs" secondAttribute="trailing" constant="40" id="5mc-Nc-qwc"/>
+                            <constraint firstItem="0qd-rE-sEs" firstAttribute="top" secondItem="ywR-68-itL" secondAttribute="bottom" constant="40" id="B2K-uo-6vV"/>
+                            <constraint firstItem="xlW-Wt-48M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dx3-46-qJU"/>
+                            <constraint firstItem="ywR-68-itL" firstAttribute="top" secondItem="reJ-Fu-CBw" secondAttribute="bottom" constant="8" id="HyP-sV-kie"/>
+                            <constraint firstItem="gI9-c6-o9I" firstAttribute="leading" secondItem="orA-yx-Dgs" secondAttribute="trailing" constant="8" id="KDc-sF-k1I"/>
+                            <constraint firstItem="Q8b-b9-pEm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KJQ-id-PiK"/>
+                            <constraint firstItem="ywR-68-itL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Kek-tG-gTJ"/>
+                            <constraint firstItem="xlW-Wt-48M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="MNT-Vj-OcQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q8b-b9-pEm" secondAttribute="bottom" constant="24" id="PZd-w6-5Ec"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="reJ-Fu-CBw" secondAttribute="trailing" constant="40" id="Tmf-wE-anX"/>
+                            <constraint firstItem="orA-yx-Dgs" firstAttribute="top" secondItem="maU-MP-Qx6" secondAttribute="bottom" constant="8" id="U5c-xf-VMg"/>
+                            <constraint firstItem="0qd-rE-sEs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Y49-cc-1Pr"/>
+                            <constraint firstItem="reJ-Fu-CBw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="c8g-oQ-ymA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gI9-c6-o9I" secondAttribute="trailing" constant="40" id="f5s-ze-3gX"/>
+                            <constraint firstItem="gI9-c6-o9I" firstAttribute="top" secondItem="maU-MP-Qx6" secondAttribute="bottom" constant="8" id="hFk-gR-Hb9"/>
+                            <constraint firstItem="reJ-Fu-CBw" firstAttribute="top" secondItem="gI9-c6-o9I" secondAttribute="bottom" constant="12" id="kTt-1c-Ig9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ywR-68-itL" secondAttribute="trailing" constant="40" id="mte-9E-LpX"/>
+                            <constraint firstItem="maU-MP-Qx6" firstAttribute="top" secondItem="xlW-Wt-48M" secondAttribute="bottom" constant="100" id="o2V-hV-fKz"/>
+                            <constraint firstItem="orA-yx-Dgs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="oA6-Eo-A28"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="maU-MP-Qx6" secondAttribute="trailing" constant="40" id="rwg-Kl-khJ"/>
+                            <constraint firstItem="maU-MP-Qx6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="yww-IE-1E3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeLangButton" destination="Q8b-b9-pEm" id="DrB-6g-vBx"/>
+                        <outlet property="countryCodeButton" destination="orA-yx-Dgs" id="b0T-IS-h2V"/>
+                        <outlet property="loginButton" destination="0qd-rE-sEs" id="FB0-1x-I0b"/>
+                        <outlet property="mobileField" destination="gI9-c6-o9I" id="47X-G4-bKV"/>
+                        <outlet property="mobileLabel" destination="maU-MP-Qx6" id="OYh-55-czb"/>
+                        <outlet property="passwordField" destination="ywR-68-itL" id="Yd6-bV-HJk"/>
+                        <outlet property="passwordLabel" destination="reJ-Fu-CBw" id="rVF-w0-l7a"/>
+                        <outlet property="titleLabel" destination="xlW-Wt-48M" id="FD4-o7-aPP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="appBackground">
+            <color red="0.015686274509803921" green="0.49411764705882355" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorAccent">
+            <color red="0.92156862745098034" green="0.43137254901960786" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>
